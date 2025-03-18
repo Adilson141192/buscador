@@ -1,5 +1,8 @@
-public class Main {
+public class Principal {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        ConsultaCep consultaCep = new ConsultaCep();
+        Endereco novoEndereco = consultaCep.buscaEndereco("01001000");
+        System.out.println(novoEndereco);
     }
 }
